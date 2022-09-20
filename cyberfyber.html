@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cyber Fyber</title>
+</head>
+    <link rel="stylesheet" href="css/style.css.css">
+     <style>
+        body{
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/bg.jpg');
+            
+        }
+        .left{
+            position: absolute;
+            top: 10px;
+            left:30px;
+            display: inline-block;
+           <!--border: 2px solid red;-->
+        }
+        .left img{
+            width: 80px;
+        }
+        .left div{
+            text-align: center;
+            color: greenyellow;
+            font-style: italic;
+            font-size: 20px;
+        }
+        .mid{
+            
+            display: block;
+            width: 58%;
+            margin: 12px auto;
+            border: 2px solid green;
+            font-style: italic;
+           
+        }
+        .right{
+            position: absolute;
+            top: 10px;
+            right: 5px;
+            display: inline-block;
+            <!--border: 2px solid yellow;-->
+        }
+        .navbar{
+            display: inline;
+        }
+        
+     
+        .navbar li{
+            font-size: 25px;
+            display: inline;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 34px 24px;
+        }
+        .navbar li a:hover , .navbar li a:active{
+            color: gray;
+            text-decoration: underline;
+        }
+        .btn{
+            margin: 0px 2px;
+            background-color: green;
+            color: white;
+            padding: 2px 7px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: gray;
+        }
+        .container{
+            border: 2px solid white;
+            margin: 106px 80px;
+            padding: 75px ;
+            width: 33%;
+            border-radius: 29px ;
+        }
+        .from-group input{
+            text-align: center;
+            display: block;
+            width: 506px;
+            padding: 6px;
+            border: 2px solid black;
+            margin: 2px auto;
+            font-size: 25px;
+            border-radius: 10px;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            display: block;
+            width: 44%;
+            margin: 24px auto ;
+        }
+    </style>
+<body>
+    <header class="header">
+        <!-- left box is for logo-->
+        <div class="left">
+           <img src="img/logo.png" alt=""></img>
+             <div>Cyber Fyber</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+           <ul class="navbar">
+               <li><a href="#" class="active">home</a></li>
+               <li><a href="#">cyber</a></li>
+               <li><a href="#">contact us</a></li>
+               <li><a href="#">about us</a></li>
+           </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">call us</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>join our organization </h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Password ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Confirm password ">
+            </div>
+            <button class="btn">submit</button>
+        </form>
+    </div>
+</body>
+</html>
